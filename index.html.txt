@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abandant Program</title>
+  <style>
+    /* Reset ?i stiluri de baza */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      color: #333;
+      line-height: 1.6;
+      background-color: #fff;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    /* Hero */
+    .hero {
+      background: linear-gradient(to right, #f00, #ff0, #00f);
+      color: white;
+      text-align: center;
+      padding: 120px 20px 80px 20px;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    }
+    .hero p {
+      font-size: 1.3rem;
+      font-weight: 600;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    }
+    /* Sectiuni */
+    section {
+      padding: 60px 20px;
+    }
+    #despre {
+      background-color: #f2f2f2;
+    }
+    #despre img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 10px;
+      margin-top: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #servicii {
+      background-color: #fff;
+    }
+    #servicii ul {
+      list-style: none;
+      padding-left: 0;
+      max-width: 700px;
+      margin: 20px auto 0 auto;
+    }
+    #servicii li {
+      padding: 10px 0;
+      font-weight: 700;
+      color: #444;
+      font-size: 1.1rem;
+      position: relative;
+      padding-left: 30px;
+    }
+    #servicii li::before {
+      content: '??';
+      position: absolute;
+      left: 0;
+      top: 10px;
+      font-size: 1.2rem;
+      color: #d32f2f;
+    }
+    /* Imagini servicii */
+    #servicii .images {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+    #servicii .images img {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    /* Contact */
+    #contact {
+      background-color: #e6e6e6;
+    }
+    #contact .contact-info {
+      max-width: 600px;
+      margin: auto;
+      text-align: center;
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      font-weight: 600;
+      color: #222;
+    }
+    form {
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    form input,
+    form textarea {
+      padding: 12px;
+      font-size: 1rem;
+      border-radius: 6px;
+      border: 1px solid #999;
+      resize: vertical;
+    }
+    form button {
+      background-color: #d32f2f; /* ro?u */
+      color: white;
+      padding: 15px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    form button:hover {
+      background-color: #b71c1c;
+    }
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+      #servicii .images {
+        flex-direction: column;
+        align-items: center;
+      }
+      #servicii .images img {
+        width: 90%;
+      }
+    }
+  </style>
+</
